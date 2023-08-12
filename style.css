@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+}
+
+.container {
+  width: 450px !important;
+  min-width: 300px;
+  margin: 0 auto;
+  height: 500px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 18px;
+  border: 1px solid white;
+}
+
+.calculator-display {
+  width: 100%;
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.calculations-display-area {
+  height: 70px;
+  width: 95%;
+  margin: 0 auto;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  text-align: end;
+  font-size: 32px;
+  appearance: textfield;
+  /* pointer-events: none; */
+}
+
+.calculations-recent-history {
+  width: 85%;
+  font-size: 15px;
+  height: 70px;
+  color: #ffffffb5;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.calculations-display-area::-webkit-outer-spin-button,
+.calculations-display-area::-webkit-inner-spin-button {
+  display: none;
+}
+
+.calculator-options {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+}
+
+.calculator-options .row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.row button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 0 5px white;
+  border: none;
+}
+
+.row button {
+  font-size: 15px;
+}
+
+.row .backspace {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(168, 168, 168, 0.829);
+}
+
+.row .basic-operator,
+.row button.calculate-button {
+  background-color: orange !important;
+}
+
+.row .basic-operator span,
+.row button.calculate-button span {
+  font-size: 20px;
+}
+
+.row .operator,
+.row .clear {
+  background-color: rgba(168, 168, 168, 0.829);
+}
+
+.row button:active {
+  box-shadow: 0 0 2px inset black;
+}
