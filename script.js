@@ -61,7 +61,7 @@ const performCalculations = () => {
             result = parseFloat(firstNumber) ** 3;
             break;
     }
-    calculationsDisplayArea.value = result
+    calculationsDisplayArea.value = +result.toFixed(9)
     firstNumber = result || 0;
     secondNumber = 0;
     operator = undefined;
